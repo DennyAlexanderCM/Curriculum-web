@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -44,7 +44,7 @@
                 <span class="bar"></span>
             </div>
         </nav>
-        <div id="header" class="home">
+        <div id="header" class="home" data-aos="fade-up">
             <div class="block">
                 <h6>Hola, mi nombre es</h6>
                 <h1>Denny Alexander</h1>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </header>
-    <section id="about-me" class="about-me center hidden">
+    <section id="about-me" data-aos="fade-up" class="about-me center">
         <h2 class="title-section">SOBRE MÍ</h2>
         <div class="about">
             <div class="foto"><img src="resources/images/photo.jpg" alt="Alexander Miza"></div>
@@ -96,9 +96,9 @@
         </div>
     </section>
     <section id="skills">
-        <h2 class="title-section hidden">HABILIDADES</h2>
+        <h2 class="title-section" data-aos="fade-up">HABILIDADES</h2>
         <div class="skills-sections">
-            <div class="skill hidden">
+            <div class="skill" data-aos="fade-up">
                 <img src="resources/icons/html.svg" alt="">
                 <div>
                     <h4>Html</h4>
@@ -106,32 +106,32 @@
                 </div>
             </div>
 
-            <div class="skill hidden"><img src="resources/icons/css.svg" alt="java script">
+            <div class="skill" data-aos="fade-up"><img src="resources/icons/css.svg" alt="java script">
                 <div>
                     <h4>CSS</h4>
                     <p>Hojas de estilo en cascada</p>
                 </div>
             </div>
-            <div class="skill hidden">
+            <div class="skill" data-aos="fade-up">
                 <img src="resources/icons/js.svg" alt="">
                 <div>
                     <h4>Java Script</h4>
                     <p>Lenguaje de programación interpretado</p>
                 </div>
             </div>
-            <div class="skill hidden"><img src="resources/icons/java.svg" alt="java">
+            <div class="skill" data-aos="fade-up"><img src="resources/icons/java.svg" alt="java">
                 <div>
                     <h4>Java</h4>
                     <p>Lenguaje de programación</p>
                 </div>
             </div>
-            <div class="skill hidden"><img src="resources/icons/python.svg" alt="pyhon">
+            <div class="skill" data-aos="fade-up"><img src="resources/icons/python.svg" alt="pyhon">
                 <div>
                     <h4>Python</h4>
                     <p>Lenguaje de programación interpretado</p>
                 </div>
             </div>
-            <div class="skill hidden"><img src="resources/icons/git.svg" alt="git">
+            <div class="skill" data-aos="fade-up"><img src="resources/icons/git.svg" alt="git">
                 <div>
                     <h4>Git</h4>
                     <p>Controlador de versiones</p>
@@ -139,14 +139,14 @@
             </div>
         </div>
     </section>
-    <section id="creations" class="creations hidden">
+    <section id="creations" class="creations" data-aos="fade-up">
         <h2 class="title-section">PORTAFOLIO</h2>
         <div class="proyectos"><a href="https://uhospitalluz.herokuapp.com/" target="_blank"><img
                     src="resources/images/proyecto1.png" alt=""></a></div>
         <div class="proyectos"><a href="https://dennyalexandercm.github.io/museum-of-candy/" target="_blank"><img
                     src="resources/images/proyecto2.png" alt=""></a></div>
     </section>
-    <section id="contact" class="contact hidden">
+    <section id="contact" class="contact" data-aos="fade-up">
         <h2 class="title-section">CONTÁCTAME</h2>
         <div class="container">
             <div class="right">
@@ -191,7 +191,10 @@
         <p>Denny Alexander &copy; 2022 Todos los derechos reservados </p>
     </footer>
     <script src="script/script.js"></script>
-    <script src="script/animation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
